@@ -10,6 +10,8 @@ Planner / Generator / Evaluator による自律開発パイプライン。1〜4�
 - `commands/build.md` — 上記3エージェントを順番に呼び出すオーケストレーター（`/agent-pipeline:build`）
 - `.mcp.json` — Playwright MCPサーバーの登録
 
+> **プラグイン経由のMCPツール名について**: プラグインが`.mcp.json`でバンドルしたMCPサーバーのツール名は、プロジェクト直接登録の場合（`mcp__playwright__*`）とは異なり、`mcp__plugin_<プラグイン名>_<サーバー名>__*`という名前空間になる（実測で確認済み。公式ドキュメントには明記されていない挙動）。`agents/evaluator.md`の`tools:`はこれに合わせて`mcp__plugin_agent-pipeline_playwright__*`としている。プラグイン名を変更する場合はここも合わせて変更すること。
+
 ## インストール
 
 ### このマシンで試す（ローカルディレクトリから）

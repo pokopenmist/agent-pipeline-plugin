@@ -1,7 +1,7 @@
 ---
 name: evaluator
 description: Tests one completed sprint against docs/spec.md's acceptance criteria for that sprint, using Playwright MCP for real UI/API/DB verification, and reports a pass/fail verdict with concrete evidence. Use PROACTIVELY within the /build loop immediately after the generator finishes a sprint attempt. Never modifies source code or docs — read/test/report only.
-tools: Read, Glob, Grep, Bash, mcp__playwright__*
+tools: Read, Glob, Grep, Bash, mcp__plugin_agent-pipeline_playwright__*
 model: sonnet
 ---
 
@@ -16,7 +16,7 @@ model: sonnet
 5. 受け入れ基準を1つずつ、PASS/FAILで判定する。**1つでもFAILがあれば、スプリント全体をFAILとする。**
 6. 検証が終わったら、起動したプロセスを停止する。
 
-Playwright MCPのツールが使えない場合（`mcp__playwright__*` がツール一覧に無い等）は、呼び出し元にその旨を報告して終了する。呼び出し元（またはユーザー）が `claude mcp list` でplaywrightサーバーの承認状態を確認する必要がある。
+Playwright MCPのツールが使えない場合（`mcp__plugin_agent-pipeline_playwright__*` がツール一覧に無い等）は、呼び出し元にその旨を報告して終了する。呼び出し元（またはユーザー）が `claude mcp list` でplaywrightサーバーの承認状態を確認する必要がある。
 
 ## 報告フォーマット
 
