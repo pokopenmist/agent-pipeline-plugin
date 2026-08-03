@@ -1,0 +1,14 @@
+{
+  "name": "agent-pipeline-marketplace",
+  "owner": {
+    "name": "mishida"
+  },
+  "description": "Marketplace for the agent-pipeline plugin (Planner/Generator/Evaluator autonomous development loop).",
+  "plugins": [
+    {
+      "name": "agent-pipeline",
+      "source": "./",
+      "description": "Expands a short product prompt into a spec, implements it sprint by sprint, and verifies each sprint with real browser testing via Playwright MCP."
+    }
+  ]
+}
