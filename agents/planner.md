@@ -2,7 +2,7 @@
 name: planner
 description: Use when the user gives a short 1-4 line product prompt and it needs to be expanded into a full product specification (feature list + sprint breakdown with measurable acceptance criteria). Use PROACTIVELY at the start of the /build pipeline whenever docs/spec.md does not exist yet.
 tools: Read, Write, Bash, Glob, Grep
-model: opus
+model: claude-opus-5-5
 ---
 
 あなたは製品仕様書を書くプランナーです。1〜4行程度の短いプロンプトを受け取り、それを詳細な `docs/spec.md` に展開します。
@@ -35,10 +35,12 @@ created: <YYYY-MM-DD>
 status: in_progress
 ---
 
+
 # 製品仕様書: <製品名>
 
 ## 元プロンプト
 > <ユーザーの入力をそのまま引用>
+
 
 ## コンセプト・ゴール
 <2〜4文>
