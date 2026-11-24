@@ -1,5 +1,5 @@
 {
   "name": "agent-pipeline",
   "description": "Planner/Generator/Evaluator autonomous development pipeline: expands a short product prompt into a spec, implements it sprint by sprint, and verifies each sprint with real browser testing via Playwright MCP.",
-  "version": "1.2.0"
+  "version": "1.3.0"
 }
